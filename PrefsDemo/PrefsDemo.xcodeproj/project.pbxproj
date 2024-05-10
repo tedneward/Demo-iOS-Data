@@ -16,6 +16,7 @@
 		FE2243FF2BA1AE9200D4CCFD /* PrefsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2243FE2BA1AE9200D4CCFD /* PrefsDemoTests.swift */; };
 		FE2244092BA1AE9200D4CCFD /* PrefsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2244082BA1AE9200D4CCFD /* PrefsDemoUITests.swift */; };
 		FE22440B2BA1AE9200D4CCFD /* PrefsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22440A2BA1AE9200D4CCFD /* PrefsDemoUITestsLaunchTests.swift */; };
+		FE84E7D12BEC63A600282FC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE84E7D02BEC63A600282FC1 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE2244042BA1AE9200D4CCFD /* PrefsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrefsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2244082BA1AE9200D4CCFD /* PrefsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsDemoUITests.swift; sourceTree = "<group>"; };
 		FE22440A2BA1AE9200D4CCFD /* PrefsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE84E7D02BEC63A600282FC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FE2243F02BA1AE9100D4CCFD /* Assets.xcassets */,
 				FE2243F22BA1AE9100D4CCFD /* LaunchScreen.storyboard */,
 				FE2243F52BA1AE9100D4CCFD /* Info.plist */,
+				FE84E7D02BEC63A600282FC1 /* Settings.bundle */,
 			);
 			path = PrefsDemo;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE84E7D12BEC63A600282FC1 /* Settings.bundle in Resources */,
 				FE2243F42BA1AE9100D4CCFD /* LaunchScreen.storyboard in Resources */,
 				FE2243F12BA1AE9100D4CCFD /* Assets.xcassets in Resources */,
 				FE2243EF2BA1AE8D00D4CCFD /* Main.storyboard in Resources */,
