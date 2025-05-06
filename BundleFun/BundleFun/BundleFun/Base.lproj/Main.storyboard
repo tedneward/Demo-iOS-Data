@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BundleFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-8N-hlT">
+                                <rect key="frame" x="16" y="272" width="288" height="32"/>
+                                <segments>
+                                    <segment title="res"/>
+                                    <segment title="exec"/>
+                                    <segment title="privFW"/>
+                                    <segment title="shaFW"/>
+                                    <segment title="supp"/>
+                                </segments>
+                                <connections>
+                                    <action selector="bundlePathChanged:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="C2a-He-ua1"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bundle Path" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaE-gk-tTc">
+                                <rect key="frame" x="13" y="320" width="288" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="48n-jx-uII"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmo-oR-Xhx">
+                                <rect key="frame" x="16" y="0.0" width="288" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="WIu-es-DF2"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BundleID" lineBreakMode="characterWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTN-wk-5Nu">
+                                <rect key="frame" x="16" y="166" width="288" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Z1f-gd-WDp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eTN-wk-5Nu" secondAttribute="trailing" constant="16" id="1Ql-5h-wXd"/>
+                            <constraint firstItem="eTN-wk-5Nu" firstAttribute="top" secondItem="pmo-oR-Xhx" secondAttribute="bottom" constant="16" id="5nk-yh-ox5"/>
+                            <constraint firstAttribute="trailing" secondItem="pmo-oR-Xhx" secondAttribute="trailing" constant="16" id="7Ol-ts-jqf"/>
+                            <constraint firstItem="TaE-gk-tTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="AD3-xH-tGD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaE-8N-hlT" secondAttribute="trailing" constant="16" id="JYt-gs-2P1"/>
+                            <constraint firstItem="TaE-gk-tTc" firstAttribute="top" secondItem="LaE-8N-hlT" secondAttribute="bottom" constant="17" id="K1H-i5-4HB"/>
+                            <constraint firstItem="eTN-wk-5Nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ry9-W8-3UB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TaE-gk-tTc" secondAttribute="trailing" constant="19" id="TTo-xF-06s"/>
+                            <constraint firstItem="pmo-oR-Xhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TZG-Ff-x1H"/>
+                            <constraint firstItem="LaE-8N-hlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d7g-hT-5pG"/>
+                            <constraint firstItem="LaE-8N-hlT" firstAttribute="top" secondItem="eTN-wk-5Nu" secondAttribute="bottom" constant="16" id="hPY-dn-Na8"/>
+                            <constraint firstItem="pmo-oR-Xhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="obc-7l-XVv"/>
+                            <constraint firstItem="eTN-wk-5Nu" firstAttribute="top" secondItem="pmo-oR-Xhx" secondAttribute="bottom" constant="16" id="uTs-QS-jd7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblBundleIdentifier" destination="eTN-wk-5Nu" id="3gC-Ah-rzU"/>
+                        <outlet property="lblBundlePath" destination="TaE-gk-tTc" id="7CL-ql-Djw"/>
+                        <outlet property="pckBundles" destination="pmo-oR-Xhx" id="kPr-rz-tFz"/>
+                        <outlet property="segBundlePaths" destination="LaE-8N-hlT" id="Zkw-Ql-aIn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.75" y="97.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
